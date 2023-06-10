@@ -1,0 +1,27 @@
+
+
+<h1>Bienvenido a Tienda Piensa</h1>
+
+<h2>Ingresa tu solicitud</h2>
+<h4>Ingresa tu producto</h4>
+
+<input type="text" [(ngModel)]="producto"/>
+<h4>Ingresa la cantidad </h4>
+<input type="text" [(ngModel)]="cantidad" />
+
+<h4> Bienvenido tu producto elegido es:  {{producto}}  </h4>
+<h4> Cantidad seleccionada:  {{cantidad}}</h4>
+
+<mat-form-field>
+    <mat-label>Snack bar duration (seconds)</mat-label>
+    <input type="number" [(ngModel)]="durationInSeconds" matInput>
+  </mat-form-field>
+  
+  <button mat-stroked-button (click)="openSnackBar()" aria-label="Show an example snack-bar">
+    Pizza party
+  </button>
+
+  <button mat-stroked-button (click)="navegar()" aria-label=" ">
+    Siguiente modulo
+  </button>
+<app-vida></app-vida>
